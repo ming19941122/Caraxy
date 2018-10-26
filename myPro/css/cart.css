@@ -1,0 +1,292 @@
+.step {
+    background: url(../img/bj-step.jpg) no-repeat;
+    width: 1200px;
+    height: 70px;
+}
+
+.step.s0 {
+    background-position: 0 0;
+}
+
+.cartBox h1 {
+    line-height: 80px;
+    font-size: 18px;
+}
+
+.cartBox .empty a {
+    color: #70C099;
+    margin: 0 5px;
+}
+
+/*购物车为空*/
+
+.cartBox .empty {
+    background: #FFF;
+    height: 200px;
+    line-height: 200px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer_box {
+    width: 100%;
+    background: #FFF;
+    position: relative;
+    z-index: 9;
+    margin-top: 55px;
+}
+
+.hide {
+    display: none;
+}
+
+/*购物车为空*/
+
+.tableList {
+    background: #FFF;
+}
+
+.tableList dt {
+    height: 45px;
+    background: #F5F5F5;
+    border-top: 1px #E4E4E4 solid;
+}
+
+.tableList ul {
+    height: 90px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.tableList dt ul {
+    height: 45px;
+    padding: 0;
+}
+
+.tableList ul li {
+    height: 90px;
+    float: left;
+    margin-left: 25px;
+    position: relative;
+}
+
+.tableList dt ul li {
+    height: 45px;
+    line-height: 45px;
+}
+
+.tableList ul li.info {
+    width: 520px;
+}
+
+.tableList ul li.amount {
+    width: 160px;
+}
+
+.tableList ul li.price {
+    width: 240px;
+}
+
+.tableList ul li.ml50 {
+    margin-left: 50px;
+}
+
+.tableList dd {
+    background: #FFF;
+    border-top: 1px #E4E4E4 solid;
+}
+
+.tableList ul li.info {
+    width: 520px;
+}
+
+.tableList ul li .icon {
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+.tableList ul li .icon a {
+    display: block;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 90px;
+    vertical-align: middle;
+}
+
+.tableList ul li .icon img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.tableList ul li .info {
+    float: left;
+    width: 410px;
+    margin: 15px 0 0 20px;
+}
+
+.tableList ul li .info h3 {
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.tableList ul li .info p {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.tableList ul li .info p span {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+ /*商品数量增减*/
+.chooseAmount {
+    width: 108px;
+    height: 30px;
+    display: inline-block;
+    border: 1px #DEDEDE solid;
+    background: #F5F5F5;
+}
+
+
+
+.tableList dd ul li.amount {
+    line-height: 90px;
+}
+
+.chooseAmount input {
+    height: 28px;
+    border: none;
+    text-align: center;
+    color: #585858;
+    font-size: 16px;
+    float: left;
+    line-height: 28px;
+    width: 43px;
+    background: none;
+}
+
+.tableList dd ul li .chooseAmount {
+    margin-top: 30px;
+}
+
+.chooseAmount a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/fashion/icon.png) no-repeat #FFF;
+}
+
+.chooseAmount a.add {
+    background-position: 0 -420px;
+    border-right: 1px #DEDEDE solid;
+    float: left;
+}
+
+.chooseAmount a.minus {
+    background-position: 0 -450px;
+    border-left: 1px #DEDEDE solid;
+    float: right;
+}
+
+/*结算单价*/
+.tableList dd ul li.price {
+    line-height: 90px;
+    font-size: 14px;
+}
+
+.tableList ul li.operation {
+    width: 110px;
+}
+
+.tableList ul li .dels {
+    display: inline-block;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.tableList ul li .dels i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/fashion/icon.png) no-repeat 0 -480px;
+    float: left;
+}
+
+.tableList ul li .dels span {
+    display: inline-block;
+    height: 30px;
+    display: none;
+    color: #70C099;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.tableList ul li .dels:hover i {
+    background-position: 0 -390px;
+    background-color: #70C099;
+}
+
+.tableList ul li .dels:hover span {
+    display: inline-block;
+}
+
+.tableList ul li.freight {
+    width: 220px;
+}
+
+.tableList ul li.total {
+    text-align: right;
+    width: 650px;
+}
+
+.tableList ul li.next {
+    width: 180px;
+    float: right;
+}
+
+.tableList dd ul .total span {
+    margin-left: 50px;
+}
+
+.tableList dd ul .total span.totalPrices {
+    color: #70C099;
+    font-size: 16px;
+}
+
+.tableList dd ul .total {
+    line-height: 90px;
+}
+
+.tableList dd ul .total span em {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.tableList ul li.next {
+    width: 180px;
+    float: right;
+}
+
+.tableList dd ul .next a {
+    display: inline-block;
+    height: 38px;
+    background: #70C099;
+    color: #FFF;
+    line-height: 38px;
+    padding: 0 30px;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.tableList dd ul .next {
+    line-height: 90px;
+}
+
+.tableList dd ul .next a:hover {
+    background: #3FD19D;
+}

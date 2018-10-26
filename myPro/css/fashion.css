@@ -1,0 +1,1169 @@
+.bjHead {
+    height: 560px;
+    position: fixed;
+    background-image: url(../img/fashion/bj-head.jpg);
+}
+
+.main{
+    margin:130px auto 0;
+    padding: 1px;
+}
+
+
+/*放大镜*/
+.intro{
+    background: #fff;
+    padding-bottom:40px;
+}
+
+.intro .exhibition {
+    width: 420px;
+    float: left;
+    margin: 50px 0 50px 40px;
+}
+
+.cloudzoom_box {
+    width: 380px;
+    height: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 380px;
+    position: relative;
+}
+
+.cloudzoom_box img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.intro:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*商品滑动*/
+
+.zoom_slider {
+    position: relative;
+    height: 84px;
+    width: 420px;
+    margin-top: 20px;
+}
+
+.zoom_slider .buttonLeft {
+    left: 0;
+}
+
+.zoom_slider .buttonRight {
+    right: 0;
+}
+.zoom_slider>a {
+    position: absolute;
+    height: 82px;
+    width: 18px;
+    top: 0;
+    background: #FFF;
+    border: 1px #DDD solid;
+    display: block;
+    border-radius: 2px;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+
+}
+
+.zoom_slider .buttonLeft:before {
+    border-color: transparent #DDD transparent transparent;
+    left: -4px;
+}
+
+.zoom_slider .buttonRight:before {
+    border-color: transparent transparent transparent #DDD;
+    left: 6px;
+}
+
+.zoom_slider>a:hover {
+    background: #70C099;
+    border-color: #70C099;
+}
+
+.zoom_slider .buttonLeft:hover:before{border-color: transparent #FFF transparent transparent;}
+
+.zoom_slider .buttonRight:hover:before{border-color: transparent transparent transparent #FFF;}
+
+.zoom_slider>a:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px;
+    top: 35px;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+
+/*图片列表*/
+.zoom_slider .imgList {
+    width: 380px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: 84px;
+    overflow: hidden;
+    top: 0;
+}
+
+.zoom_slider .thumbelina {
+    position: absolute;
+    height: 84px;
+}
+
+.zoom_slider .thumbelina li {
+    float: left;
+    border: 2px solid transparent;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
+    line-height: 80px;
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.zoom_slider .thumbelina li img {
+    width: 80px;
+    vertical-align: middle;
+}
+
+
+/*规格挑选*/
+
+.intro .info {
+    float: right;
+    width: 640px;
+    margin: 50px 50px 0 0;
+}
+
+.intro .info h1 {
+    height: 40px;
+    line-height: 40px;
+}
+
+.intro .info h1 strong {
+    font-size: 24px;
+    float: left;
+}
+
+.position ul {
+    float: right;
+}
+
+.position ul li {
+    float: left;
+    padding: 0 15px;
+    background: url(../img/fashion/bj-list.jpg) no-repeat 0 center;
+}
+
+.position ul li:first-child {
+    background-image: none;
+}
+
+.intro .info h1 .collect {
+    float: right;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    background: url(../img/fashion/icon.png) no-repeat 0 -30px;
+    padding-left: 30px;
+}
+
+
+.intro .info h5 {
+    line-height: 1.5em;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.intro .info .price {
+    border-bottom: 1px #E4E4E4 solid;
+    padding: 15px 0;
+    font-size: 24px;
+    line-height: 40px;
+    height: 40px;
+}
+
+.intro .info .introduce {
+    border-bottom: 1px #E4E4E4 solid;
+    padding: 15px 0;
+    line-height: 1.5em;
+}
+
+/*送货*/
+.intro .info .producing {
+    padding: 15px 0;
+    line-height: 40px;
+    height: 40px;
+}
+
+.intro .info .producing .deliver {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background: url(../img/fashion/icon.png) no-repeat;
+    padding: 0 18px 0 35px;
+    position: relative;
+    margin-right: 18px;
+}
+
+.intro .info .producing .deliver:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 10px;
+    width: 1px;
+    background: #DEDEDE;
+}
+/*主石*/
+.intro .info .attr {
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    position: relative;
+}
+
+.intro .info .attr .select {
+    float: left;
+}
+
+.intro .info .attr span {
+    float: left;
+}
+
+.intro .info .attr .mainList {
+    width: 592px;
+}
+
+.select .current {
+    display: block;
+    border: 1px #E4E4E4 solid;
+    line-height: 45px;
+    height: 45px;
+    position: relative;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.intro .info .attr .mainList em {
+    float: right;
+    margin-right: 40px;
+}
+
+.select .current:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-color: #ABABAB transparent transparent transparent;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/*钻托*/
+.intro .info .attr .materialList.w-300 {
+    width: 280px;
+}
+
+
+.intro .info .attr .materialList i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    margin-right: 5px;
+    float: left;
+    margin-top: 13px;
+}
+
+.intro .info .attr .materialList em {
+    float: right;
+    margin-right: 40px;
+}
+
+.intro .info .attr .sizeList {
+    width: 120px;
+    float: left;
+}
+
+.intro .info .attr .measure {
+    width: 100px;
+    float: right;
+    display: block;
+    background: #70C099;
+    height: 47px;
+    text-align: center;
+    color: #FFF;
+    line-height: 47px;
+}
+
+
+/*购买*/
+
+.intro .info h6 {
+    height: 50px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.intro .info h6 a {
+    display: inline-block;
+    background: #70C099;
+    width: 640px;
+    height: 47px;
+    text-align: center;
+    color: #FFF;
+    line-height: 47px;
+    position: relative;
+    font-size: 16px;
+}
+
+.intro .info h6 a.w-330 {
+    width: 330px;
+    float: left;
+}
+
+.intro .info h6 a.toCart {
+    width: 290px;
+    float: right;
+}
+
+ /*联系方式*/
+.intro .info .contact {
+    border-top: 1px solid #E4E4E4;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.intro .info .contact li {
+    float: left;
+    width: 200px;
+    height: 30px;
+}
+
+.intro .info .contact a {
+    display: inline-block;
+    height: 30px;
+    background: url(../img/fashion/icon.png) no-repeat;
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+.intro .info .contact a.qq {
+    background-position: 0 -90px;
+}
+
+.intro .info .contact a.tel {
+    background-position: 0 -120px;
+}
+
+.intro .info .contact a.email {
+    background-position: 0 -150px;
+}
+
+/*商品详情*/
+
+.detailData {
+    margin-top: 10px;
+    background: #FFF;
+}
+
+.detailData h1 {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+    border-bottom: 1px #E4E4E4 solid;
+}
+
+.detailData .content {
+    padding: 20px 40px 40px;
+}
+
+.detailData h1 strong {
+    float: left;
+    font-size: 16px;
+}
+
+.detailData .content li {
+    float: left;
+}
+
+/*钻托信息*/
+.detailData .content li h3 {
+    font-size: 18px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.detailData .content li p {
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+.detailData .content li.w380 {
+    width: 380px;
+}
+
+/*副石信息*/
+.detailData .content li.w280 {
+    width: 280px;
+}
+.detailData .content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*主石信息*/
+.detailData .content li.w460 {
+    width: 460px;
+}
+
+.detailData .content li h4 em {
+    color: #A0A0A0;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.detailData .content li h4 {
+    margin-top: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.detailData .content li .shapeList dd {
+    margin: 5px 0;
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+    float:left;
+}
+
+.detailData .content li .shapeList dd div {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.detailData .content li .shapeList dd div img {
+    width: 100%;
+}
+
+.detailData .content li .shapeList dd p {
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.detailData .content li .shapeList dd.on p {
+    color: #70C099;
+}
+
+.detailData .content li .shapeList{
+    overflow: hidden;
+}
+
+.detailData .content .w460 .mainInfo {
+    width: 400px;
+    margin: 20px 0 0 15px;
+}
+
+.detailData .content li .mainInfo span {
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+}
+
+/*钻石描述*/
+.detailContent {
+    margin-top: 10px;
+    background: #FFF;
+    padding: 0 0 1px 0;
+}
+
+.detailContent h1 {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+    border-bottom: 1px #E4E4E4 solid;
+}
+
+.detailContent h1 strong {
+    float: left;
+    font-size: 16px;
+}
+
+.detailContent .content {
+    margin: 0;
+    overflow: hidden;
+}
+
+.detailContent .content p {
+    line-height: 0;
+    text-align: center;
+}
+
+/*客户案例*/
+
+.relevance {
+    margin: 40px 0 10px;
+    height: 800px;
+}
+
+.relevance .case {
+    width: 600px;
+    height: 680px;
+    background: #FFF;
+    float: left;
+    margin-top: 60px;
+}
+
+.relevance .case h2 {
+    text-align: center;
+    color: #585858;
+    font-size: 24px;
+    margin-top: 70px;
+    line-height: 40px;
+}
+
+.relevance .case h3 {
+    text-align: center;
+    color: #585858;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: be;
+    text-transform: uppercase;
+}
+
+.caseWheel {
+    width: 520px;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    margin: 20px auto 0;
+}
+
+
+
+.caseWheel .contents li a {
+    display: block;
+    width: 520px;
+    height: 327px;
+    margin: 30px 0;
+}
+
+.caseWheel .contents li .photos img {
+    width: 100%;
+}
+
+
+.caseWheel .contents li p {
+    text-align: center;
+    font-size: 14px;
+    color: #585858;
+    line-height: 30px;
+}
+
+/*客户案例左右箭头*/
+.caseWheel .butLeft, .caseWheel .butRight {
+    display: inline-block;
+    background: url(../img/but-wheel.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 3;
+    top: 175px;
+
+}
+
+.caseWheel .butLeft {
+    background-position: 0 -160px;
+    left: 20px;
+}
+
+.caseWheel .butRight {
+    background-position: 0 -200px;
+    right: 43px;
+}
+
+.caseWheel .butLeft i, .caseWheel .butRight i {
+    display: inline-block;
+    background: url(../img/but-wheel.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.caseWheel .butRight i {
+    background-position: 0 -120px;
+}
+
+.caseWheel .butLeft i {
+    background-position: 0 -40px;
+}
+
+.caseWheel .butLeft:hover i, .caseWheel .butRight:hover i {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.caseWheel .sums {
+    position: absolute;
+    z-index: 4;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.caseWheel .sums em {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    background: url(../img/sum-wheel3.png) no-repeat;
+}
+
+.caseWheel .contents li time {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 54px;
+    color: #70C099;
+    font-family: be;
+}
+
+.caseWheel .contents li time:before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 24px;
+    background: #70C099;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.caseWheel .contents li {
+    float: left;
+    width: 520px;
+    height: 480px;
+    position: relative;
+}
+
+.caseWheel .contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 480px;
+    z-index: 1;
+    width: 1040px;
+    transition: all 0.5s ;
+}
+
+.caseWheel .sums em.current {
+    background-position: 0 -20px;
+}
+/*花絮*/
+
+.relevance .titbits {
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.relevance .titbits .linkBut {
+    display: block;
+    background: url(../img/fashion/bj-titbits.jpg) no-repeat;
+    position: relative;
+    z-index: 0;
+    width: 600px;
+    height: 800px;
+    -webkit-transition: all 3s linear;
+    transition: all 3s linear;
+}
+.relevance .titbits .linkBut:hover{-webkit-transform:scale(1.1);transform:scale(1.1);}
+
+.relevance .titbits .play {
+    display: block;
+    position: absolute;
+    background: url(../img/play.png) no-repeat;
+    width: 45px;
+    height: 45px;
+    top: 605px;
+    left: 278px;
+    z-index: 1;
+}
+
+.relevance .titbits p {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 680px;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1;
+}
+
+/*鉴定组织*/
+
+.organization {
+    background: url(../img/fashion/organization.jpg) no-repeat;
+    width: 1200px;
+    height: 425px;
+    margin: 0;
+    position: relative;
+}
+
+.organization a {
+    display: block;
+    height: 120px;
+    position: absolute;
+    top: 182px;
+}
+
+.organization a.gia {
+    width: 200px;
+    left: 65px;
+}
+
+.organization a.igi {
+    width: 200px;
+    left: 390px;
+}
+
+.organization a.hrd {
+    width: 240px;
+    left: 705px;
+}
+
+.organization a.ngtc {
+    width: 120px;
+    left: 1015px;
+}
+
+.organization a:hover {
+    border: 2px #70C099 solid;
+}
+
+/*为什么培育钻石*/
+
+.toCultivate {
+    background: url(../img/fashion/banner.jpg) no-repeat center center;
+    width: 1200px;
+    height: 266px;
+    margin: 0;
+    position: relative;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    background-size: 1200px auto;
+}
+
+.toCultivate h3 {
+    font-size: 30px;
+    font-family: be;
+    position: absolute;
+    top: 65px;
+    width: 300px;
+    left: 240px;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 40px;
+}
+
+.toCultivate h4 {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    left: 240px;
+    top: 115px;
+    line-height: 30px;
+    color: #FFF;
+}
+
+.toCultivate h6 {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    left: 240px;
+    top: 165px;
+    line-height: 30px;
+}
+
+.toCultivate h6 a {
+    display: inline-block;
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    background: #70C099;
+    font-size: 16px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.toCultivate:hover{background-size: 1250px auto;}
+
+.toCultivate h6 a:hover{background: #42dba5;}
+
+/*预计送达时间*/
+.detailBuy {
+    margin-top: 10px;
+    background: url(../img/fashion/bj-express.jpg) no-repeat;
+    width: 1200px;
+    height: 395px;
+}
+
+.detailBuy .expressBox {
+    float: left;
+    width: 285px;
+    margin: 60px 0 0 415px;
+}
+
+.detailBuy .expressBox h5 {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-left: 3px;
+}
+
+.detailBuy .expressBox h3 {
+    font-size: 36px;
+    font-family: be;
+    line-height: 1.5em;
+    margin-left: 3px;
+}
+
+.detailBuy .expressBox .express {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.detailBuy .buyBox {
+    float: right;
+    background: url(../img/fashion/buy.jpg) no-repeat;
+    width: 496px;
+    height: 395px;
+}
+/*样式精选*/
+.headTiele {
+    height: 425px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.headTiele h3 {
+    margin-top: 100px;
+    font-family: be;
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 6px #000;
+}
+
+.headTiele h4 {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px #000;
+}
+
+.bjHeadShade {
+    position: absolute;
+    top: 560px;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    height: 500px;
+    background: #E4E4E4;
+}
+
+
+.screenBox {
+    background: #FFF;
+    position: relative;
+}
+
+.screenBox .column {
+    float: left;
+    padding: 40px 0;
+}
+
+.screenBox .column h2 {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0 40px;
+}
+
+.screenBox .column h3 {
+    font-size: 12px;
+    color: #999999;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    margin: 0 40px;
+}
+
+.screenBox .typeList {
+    margin: 0 40px;
+}
+
+.screenBox .typeList li {
+    height: 20px;
+    margin-top: 15px;
+}
+
+.checkbox.on {
+    background-position: 0 -20px;
+}
+
+.screenBox .checkbox {
+    display: block;
+    width: auto;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.screenBox .checkbox.on {
+    color: #70C099;
+}
+
+.screenBox .betweenLine {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #F2F2F2;
+}
+
+.screenBox .betweenLine.l250 {
+    left: 250px;
+}
+
+.screenBox .column.shapes {
+    width: 370px;
+}
+
+.screenBox .column.types {
+    width: 250px;
+}
+
+.screenBox .shapeList dd {
+    float:left;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin: 15px 0 0px 0;
+    height: 65px;
+}
+
+.screenBox dd .checkbox {
+    display: block;
+    width: 100%;
+    padding: 0;
+    background: none;
+}
+
+.screenBox .shapeList dd div {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.screenBox .shapeList dd div img {
+    width: 100%;
+}
+
+.screenBox .shapeList {
+    margin: 0 20px;
+}
+
+.screenBox .shapeList dt {
+    height: 20px;
+    margin: 15px 20px 0;
+}
+
+.screenBox .shapeList dd h5 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.screenBox:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.screenBox .betweenLine.l620 {
+    left: 620px;
+}
+   /*设计风格*/
+.screenBox .column.styles {
+    width: 330px;
+}
+
+.screenBox .styleList {
+    margin: 0 30px;
+}
+
+.screenBox .styleList dt {
+    height: 20px;
+    margin-top: 15px;
+    margin: 15px 10px 0;
+}
+
+.screenBox .styleList dd {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin: 15px 0 0px 0;
+    height: 65px;
+}
+
+.screenBox .betweenLine.l950 {
+    left: 950px;
+}
+
+.screenBox .column.prices {
+    width: 250px;
+}
+
+.screenBox .pricesList {
+    margin: 0 40px;
+}
+
+.screenBox .pricesList li {
+    height: 20px;
+    margin-top: 15px;
+}
+
+  /*商品列表*/
+.fashionList {
+    margin-top: 10px;
+    min-height: 430px;
+    position: relative;
+}
+
+.fashionList ul li {
+    width: 1200px;
+    height: 430px;
+    margin-bottom: 15px;
+}
+
+.fashionList ul li .pro {
+    float: left;
+    width: 390px;
+    height: 430px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.fashionList ul li .pro:first-child {
+    margin-left: 0;
+}
+
+.fashionList ul li a {
+    display: block;
+    width: 100%;
+}
+
+.fashionList ul li .imgs {
+    width: 390px;
+    height: 300px;
+    overflow: hidden;
+    line-height: 300px;
+    background: #FFF;
+}
+
+.fashionList ul li .imgs img {
+    width: 100%;
+    vertical-align: middle;
+    line-height: 300px;
+}
+
+.fashionList ul li p {
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+    position: relative;
+    background: #ECF3F3;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.fashionList ul li p i {
+    position: absolute;
+    background: url(../img/sum-wheel2.png) no-repeat;
+    width: 13px;
+    height: 5px;
+    top: -5px;
+    left: 193px;
+}
+
+.fashionList ul li a:hover p {
+    background: #70C099;
+    color: #FFF;
+}
+
+.fashionList ul li a:hover p i {
+    background-position: 0 -5px;
+}
+
+.fashionList ul li p strong {
+    display: block;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+.fashionList ul li p em {
+    display: block;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+
+.zoom_slider .thumbelina li.cloudzoom-gallery-active {
+    border-color: #70C099;
+}
+/*--样式精选*--/

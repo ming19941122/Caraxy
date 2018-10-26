@@ -1,0 +1,163 @@
+	*{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font-size: 14px;
+		font: inherit;
+		vertical-align: baseline;
+		text-decoration: none;
+	}
+	body{
+		width: 100%;
+		background: #E4E4E4;
+	}
+
+	#foot{
+		width: 100%;
+		height: 50px;
+		margin: 100px 0 0 30px;
+	}
+
+	input {
+		font-family: arial,"Microsoft YaHei","微软雅黑",Helvetica,Tahoma,Arial,STXihei,sans-serif;
+		outline: none;
+		-webkit-tap-highlight-color: rgba(255,0,0,0);
+		color: #585858;
+	}
+
+	#login_box{
+		background: #fff;
+		width:410px;
+		height: 556.6px;
+		margin:50px auto 0;
+	}
+
+	#login{
+		width: 410px;
+		height: 60px;
+		font-size: 18px;
+		line-height: 61px;
+		border-bottom: 1px solid #ECECEC;
+	}
+
+	#login a{
+		width: 70px;
+		height: 60px;
+		border-left: 1px solid #ECECEC;
+		text-decoration: none;
+		float: right;
+		text-align: center;
+		color:black;
+	}
+
+	#login strong{
+		width: 36px;
+		height: 60px;
+		margin-left: 30px;
+	}
+
+	.login_main{
+		width:410px;
+	}
+
+	.login_main p{
+		width: 334px;
+		height: 49px;
+		border: 1px solid #E5E5E5;
+		margin: 14px 0 0 38px;
+		position: relative;
+	}
+
+	.login_main p.code{
+		width: 170px;
+	}
+
+	.login_main p input{
+		width: 250px;
+		margin-left: 12px;
+		font-size: 16px;
+		line-height: normal;
+		height: 46px;
+		border: none;
+		background: none;
+	}
+
+	.login_main p i{
+		display: inline-block;
+		float: left;
+		width: 49px;
+		height: 49px;
+		background: url(../img/icon-login.png) no-repeat center 0
+				   #F5F5F5;
+		border-right: 1px solid #E5E5E5;
+	}
+
+	.login_main p.upwd i{
+		background-position: center -100px;
+	}
+	.upwd:focus{
+		color: red;
+	}
+
+	.login_main p.code i{
+		background-position: center -200px;
+	}
+
+
+	 .login_main p.code  input{
+		width: 88px;
+	}
+
+	#login_box h6{
+		width: 332px;
+		height: 13.6px;
+		margin: 14px 39px 14px 39px;
+		text-align: right;
+	}
+
+	#login_box h6 a{
+		color: #70C099;
+		text-decoration:none;
+	}
+
+	h5{
+		width: 332px;
+		margin: 14px 39px;
+	}
+
+	h5 a{
+		height: 51px;
+		line-height: 51px;
+		display: block;
+		text-align: center;
+		background: #70C099;
+		text-align: center ;
+		font-size: 16px;
+		color:#fff;
+	}
+
+	#login_box .toRegister{
+		background: #F5F5F5;
+		border-top: 1px solid #E5E5E5;
+		height: 170px;
+		padding-top: 13px;
+		margin-top: 24px;
+	}
+
+	.toRegister h5 a.red{
+		background: #F6636E;
+	}
+
+	.toRegister h5 a.yellow{
+		background: #DABB40;
+	}
+	#footer{
+		font-size: 14px;
+		text-align: center;
+		margin: 100px 0  30px;
+		height: 50px;
+		line-height: 50px;
+		background: none;
+		border: none;
+	}

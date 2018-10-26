@@ -1,0 +1,161 @@
+.register{
+    background:white;
+    width:1000px;
+    margin: 50px auto;
+}
+.title{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ECECEC;
+    font-size: 18px;
+}
+.title strong{
+    float: left;
+    margin-left: 30px;
+}
+
+.title .goBack {
+    float: right;
+    display: block;
+    width: 90px;
+    text-align: center;
+    border-left: 1px solid #ECECEC;
+    height: 60px;
+}
+
+.table {
+    margin: 40px 0 0 330px;
+}
+.table dt a {
+    float: left;
+    display: block;
+    width: 165px;
+    height: 48px;
+    border: 1px solid #DEDEDE;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.table dt {
+    width: 334px;
+    height: 50px;
+    margin: 0 0 35px;
+}
+/*选中后样式*/
+.table dt a.current {
+    color: #FFF;
+    background: #70C099;
+    border-color: #70C099;
+}
+.table dd {
+    margin-top: 15px;
+    height: 50px;
+}
+/*注册信息*/
+.table span {
+    width: 332px;
+    display: block;
+    height: 48px;
+    border: 1px solid #DEDEDE;
+    float: left;
+    font-size: 16px;
+    color: #585858;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.table span i {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    background: url(../img/icon-login.png) no-repeat center 0 #F5F5F5;
+    border-right: 1px solid #E5E5E5;
+    -webkit-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+}
+
+.table input[type="text"], .table input[type="password"] {
+    width: 250px;
+    margin-left: 12px;
+    font-size: 16px;
+    line-height: 46px;
+    height: 46px;
+    border: none;
+    background: none;
+}
+
+/*验证码*/
+.table .code i {
+    background-position: center -200px;
+}
+
+/*邮箱*/
+.table .email i {
+    background-position: center -300px;
+}
+
+/*密码*/
+.table .pwd i {
+    background-position: center -100px;
+}
+
+
+/*注册按钮*/
+.table .submits {
+    width: 334px;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+    background: #70C099;
+    color: #FFF;
+    font-size: 16px;
+    display: block;
+}
+
+/*同意条例*/
+ .clause {
+    width: 334px;
+    height: 30px;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.table .clause .checkbox.on {
+    background-position: 0 -60px;
+}
+
+.table div.clause a {
+    display: inline-block;
+    color: #70C099;
+    margin: 0 5px;
+}
+a:focus, a:active, a:link, a:visited, a:hover {
+    outline: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+}
+
+.toLogin {
+    height: 80px;
+    background: #F5F5F5;
+    border-top: 1px solid #E4E4E4;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.toLogin a {
+    display: inline-block;
+    margin-left: 10px;
+    height: 23px;
+    width: 40px;
+    text-align: center;
+    line-height: 23px;
+    background: #DABB40;
+    color: #FFF;
+    font-size: 12px;
+    vertical-align: middle;
+}

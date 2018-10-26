@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+    <div class="register">
+        <div class="title">
+            <strong>注册</strong>
+            <a href="index_main.html" class="goBack">返回</a>
+        </div>
+        <form action="">
+            <dl class="table">
+                <dt class="tab">
+                    <a href="" class="current">用户注册</a>
+                    <a href="">经销商注册</a>
+                </dt>
+                <!--手机号-->
+                <dd class="user">
+                    <span>
+                        <i></i>
+                        <input type="text" name="phone" maxlengrh="11" placeholder="手机号">
+                    </span>
+                </dd>
+                <!--验证码-->
+                <dd class="code">
+                    <span>
+                        <i></i>
+                        <input type="text" name="code" placeholder="验证码">
+                    </span>
+                </dd>
+                <!--邮箱-->
+                <dd class="email">
+                    <span>
+                        <i></i>
+                        <input type="text" name="email" placeholder="邮箱">
+                    </span>
+                </dd>
+                <!--密码-->
+                <dd class="pwd">
+                    <span>
+                        <i></i>
+                        <input type="password" name="pwd" placeholder="密码">
+                    </span>
+                </dd>
+                <!--确认密码-->
+                <dd class="pwd  cpwd">
+                    <span>
+                        <i></i>
+                        <input type="password" name="pwd" placeholder="确认密码">
+                    </span>
+                </dd>
+            </dl>
+            <dl class="table mt0">
+                <dd>
+                    <a href="javascript:void(0)" class="submits">注册</a>
+                </dd>
+                <dd>
+                    <div class="clause">
+                        <!--选择同意才可注册-->
+                        <a  class="checkbox on"></a>我已阅读并同意
+                        <a href="">法律声明</a>和
+                        <a href="">隐私条款</a>
+                    </div>
+                </dd>
+            </dl>
+        </form>
+        <div class="toLogin">
+            如果您已拥有caraxy账户，则可在此
+            <a href=" user_login.html">登录</a>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/footer.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/public.js"></script>
+
+</html>

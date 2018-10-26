@@ -1,0 +1,959 @@
+/*顶部轮播图*/
+
+.rslides{
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.slider_img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.07);
+    transition: 10s;
+}
+
+.rslides1_on  div.slider_img{
+    transform: scale(1);
+}
+
+a.rslides1_nav.prev, a.rslides1_nav.next {
+    position: absolute;
+    bottom: 50%;
+    z-index: 88;
+}
+
+a.rslides1_nav.next {
+    right: 20px;
+    background-image: url(../img/icon_next.png);
+}
+
+a.rslides1_nav.prev {
+    left: 20px;
+    background-image: url(../img/icon_prev.png);
+}
+
+a.rslides1_nav {
+    width: 39px;
+    height: 39px;
+    border-radius: 40px;
+    background: rgb(11,11,11);
+    background: rgba(11,11,11,.4);
+    transition: 0.4s;
+}
+
+a.rslides1_nav:after {
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255,.0);
+    transition: 0.2s;
+}
+
+a.rslides1_nav:hover:after {
+    width: 47px;
+    height: 47px;
+    top: -5px;
+    left: -5px;
+    border-color: rgba(255,255,255,.4);
+}
+
+
+a.rslides1_nav.prev:hover {
+    background-image: url(../img/icon_prev2.png);
+}
+
+a.rslides1_nav.next:hover {
+    background-image: url(../img/icon_next2.png);
+}
+
+a.rslides1_nav:hover {
+    background:white;
+
+}
+
+/*轮播视频*/
+.indexVideo{
+    height: 620px;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1000px;
+    margin-left: -500px;
+}
+
+.indexVideo h3{
+    font-family: "be";
+    margin-top: 320px;
+    font-size: 66px;
+    color: #ffffff;
+    letter-spacing: 12px;
+}
+
+.indexVideo h4{
+    margin-top: 10px;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+
+.main{
+    margin: 750px auto 0;
+}
+
+/*主要内容*/
+.indexWheel{
+    width: 620px;
+    position: relative;
+    overflow: hidden;
+    height: 658px;
+    float: left;
+    border-right: 1px solid #EBF3F3;
+    /*background:#e4e4e4;*/
+    background:gray;
+
+}
+
+.indexWheel .contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 658px;
+    z-index: 1;
+}
+
+.indexWheel .contents li {
+    float: left;
+    width: 620px;
+    height: 658px;
+    position: relative;
+}
+
+.indexWheel .contents li .panoramaList {
+    width: 620px;
+    height: 528px;
+    overflow: hidden;
+    background: #EBF3F3;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    line-height: 520px;
+    display: table-cell;
+}
+
+.indexWheel .contents li p {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    padding: 20px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.indexWheel .contents li .startPlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    z-index: 6;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+
+.indexWheel  a.butRight{
+    background-position: 0 -80px;
+    right: 43px;
+}
+
+.indexWheel a.butLeft{
+    background-position: 0 0;
+    left: 43px;
+}
+
+/*待调整*/
+.indexWheel .butLeft, .indexWheel .butRight {
+    display: inline-block;
+    background: url(../img/but-wheel.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 3;
+    top: 270px;
+    display: none;
+}
+
+.indexWheel .butLeft i , .indexWheel .butRight i{
+    display: inline-block;
+    background: url(../img/but-wheel.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.indexWheel .butRight i {
+    background-position: 0 -120px;
+}
+
+.indexWheel .butLeft i {
+    background-position: 0 -40px;
+}
+
+.indexWheel .butLeft:hover i, .indexWheel .butRight:hover i {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+
+
+/*
+*/
+.indexWheel .sums2{
+    position: absolute;
+    z-index: 4;
+    bottom: 136px;
+    left: 20px;
+    right: 20px;
+    height: 6px;
+    text-align: center
+}
+
+.indexWheel .sums2 em{
+    display: inline-block;
+    width: 21px;
+    height: 6px;
+    margin: 0 10px;
+    background: url(../img/sum-wheel.png) no-repeat;
+}
+
+.indexWheel .sums2 em.current {
+    background-position: 0 -6px;
+}
+
+.indexWheel .bjText{
+    background: #70C099;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0
+}
+
+
+/*客户感言*/
+.ganyan{
+    float: left;
+    width: 579px;
+    height: 735px;
+    background: #FFF;
+    margin-top: -77px
+}
+
+.ganyan h3,.pick h3{
+    margin: 55px 0 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5em
+}
+
+.ganyan h4{
+    font-family: "be";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #EEEEEE;
+    margin: 0 52px;
+    padding-bottom: 40px;
+}
+
+.ganyanWheel{
+    width: 476px;
+    position: relative;
+    overflow: hidden;
+    height: 570px;
+    margin: 0 auto;
+}
+
+.ganyan .ganyanWheel .contents{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    z-index: 1;
+}
+
+.ganyanWheel .contents li {
+    float: left;
+    width: 476px;
+    height: 500px;
+    position: relative;
+}
+
+.ganyan .ganyanWheel .contents li>a{
+    display: block;
+    text-align: center;
+    height: 282px;
+    border-bottom: 1px solid #EEEEEE;
+    padding-top: 1px;
+}
+
+.ganyan .ganyanWheel .contents li>a .photos{
+    width: 141px;
+    height: 141px;
+    border-radius: 100%;
+    overflow: hidden;
+    line-height: 141px;
+    text-align: center;
+    margin: 41px auto 0;
+}
+
+.ganyan .contents .photos img{
+    width: 100%;
+}
+
+.ganyan .contents li h2{
+    font-family: "aramisi","xjl";
+    font-size: 36px;
+    margin-top: 33px;
+}
+
+
+.ganyan .ganyanWheel .contents li p{
+    margin-top: 35px;
+    background: url(../img/bj-testimonials-p.jpg) no-repeat;
+    padding: 30px 70px 0;
+    height: 150px;
+    overflow: hidden;
+    line-height: 30px;
+    text-align: center;
+}
+.ganyan .sums{
+    position: absolute;
+    z-index: 4;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.ganyan .sums em {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    background: url(../img/sum-wheel3.png) no-repeat;
+}
+
+.ganyan .sums em.current{
+    background-position: 0 -20px;
+}
+
+    /*挑选*/
+.pick{
+    float: left;
+    width: 620px;
+    height: 738px;
+    background: #FFF;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+.pick h4{
+    font-family: "be";
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+.pick dl.condition{
+    width: 580px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pick dl.condition h5{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.pick dl.condition h6{
+    font-size: 12px;
+    color: #999999;
+    line-height: 1.5em;
+}
+
+.condition dd{
+    position: relative;
+}
+
+.condition .shape{
+    padding: 50px 10px;
+}
+
+
+/*钻石形状*/
+
+.pick .condition .shape a{
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    margin: -25px 5px;
+    position: relative;
+    line-height: 106px;
+    overflow: hidden;
+}
+
+.condition dd.shape a img {
+    vertical-align: middle;
+    line-height: 106px;
+}
+
+.pick .condition .shape a i{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    background: url(../img/bj-shape-green.png) no-repeat center center;
+    overflow: hidden;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background-size: 100% auto;
+    width: 106px;
+    height: 106px;
+    left: 0;
+    top: 0;
+    filter: alpha(opacity=0);
+    opacity:0
+}
+.pick .condition .shape a i:hover{
+    opacity: 1;
+}
+
+.condition dd.shape a:hover i, .condition dd.shape a.on i {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.pick .condition .shape a span{
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    background: url(../img/bj-shape-white.png) no-repeat;
+}
+
+
+.condition .exhibition{
+    position: absolute;
+    background: url(../img/bj-exhibition.png) no-repeat;
+    width: 230px;
+    height: 230px;
+    top: -160px;
+    left: 175px;
+    text-align: center;
+    line-height: 230px;
+    display: none;
+
+}
+
+.condition dd .exhibition img {
+
+    vertical-align: middle;
+    max-width: 95px;
+    max-height: 95px;
+}
+
+/*钻石颜色挑选*/
+.condition .color{
+    padding: 10px 0;
+}
+
+.condition dt{
+    margin-top: 30px;
+}
+
+.condition .color a{
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    margin: 5px;
+    position: relative;
+    line-height: 106px;
+    text-align: center;
+}
+
+.condition .color a span{
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-position: center center;;
+    transition: all 0.2s linear
+}
+
+
+.condition .color a i{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 106px;
+    height: 106px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    background-size: 100% auto;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.condition .color a img{
+    vertical-align: middle;
+    line-height: 106px;
+}
+
+
+.condition dd.color a:hover span, .condition dd.color a.on span {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.condition dd.color a:hover i, .condition dd.color a.on i {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+
+.find{
+    display: inline-block;
+    background: url(../img/bj-search.png) no-repeat;
+    width: 202px;
+    height: 41px;
+    position: absolute;
+    left: 209px;
+    bottom: 0;
+    color: #FFF;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+/*信息*/
+
+.news {
+    float: left;
+    width: 580px;
+    height: 738px;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.news .imgs{
+    width: 580px;
+    height: 521px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    transition: all 0.5s ;
+}
+
+.pick .news .imgs img{
+    width: 100%;
+}
+.main .news  a div.imgs:hover{
+    transform: scale(1.02);
+}
+
+.news .texts{
+    background: #70C099;
+    height: 157px;
+    display: block;
+    position: absolute;
+    color: #FFF;
+    padding-top: 60px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 580px;
+    z-index: 1;
+}
+
+.news .texts:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: url(../img/sum-wheel.png) no-repeat center -6px;
+    width: 21px;
+    height: 6px;
+    top: -6px;
+    left: 280px;
+}
+
+.news .texts h3{
+    font-size: 26px;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+}
+
+.news .texts h4{
+    font-family: "be";
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+.main .wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*创造自己的珠宝背景大图*/
+.parallax{
+    width: 100%;
+    position: relative;
+}
+
+.parallax .parallaxImg{
+     position: absolute;
+     top: -100px;
+     width: 100%;
+     background-position: center 0;
+     min-width: 1200px;
+ }
+
+.parallax .wrapper .createBox{
+    width: 100%;
+    height: 485px;
+    text-align: center;
+    padding-top: 1px;
+
+}
+
+.createBox h3{
+    margin-top: 120px;
+    font-size: 24px;
+    color: #666;
+}
+
+.createBox h4{
+    margin-top: 12px;
+    font-size: 26px;
+    color: #666;
+    font-family: "be";
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.createBox h6{
+    height: 38px;
+    margin-top: 20px;
+}
+
+.createBox h6 a{
+    display: inline-block;
+    color: #FFF;
+    background: #70C099;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.createBox h6 a:hover{
+    background: #42dba5;
+}
+
+/*款式精选*/
+
+.parallax .parallaxBj{
+    height: 350px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: #E4E4E4;
+}
+.projectBox{
+    width: 100%;
+    height: 190px;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.projectBox h3{
+    margin-top: 70px;
+    font-size: 24px;
+}
+
+.projectBox h4{
+    margin-top: 12px;
+    font-size: 26px;
+    font-family: "be";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*精选轮播*/
+.projectWheel{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.projectWheel .wheelBox{
+    overflow: hidden;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+
+.projectWheel .wheelBox a{
+    display: block;
+    width: 100%;
+}
+
+.projectWheel  a:hover p{background: #70C099;color: #FFF;}
+
+.projectWheel .wheelBox li div.pro {
+    float: left;
+    width: 400px;
+    height: 430px;
+    text-align: center;
+}
+
+.projectWheel .contents {
+    position: absolute;
+    height: 430px;
+    top: 0;
+    left: 0;
+}
+
+.projectWheel .contents li {
+    float: left;
+    width: 1200px;
+    height: 430px;
+}
+
+.projectWheel .contents li .imgs {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    line-height: 300px;
+    background: #FFF;
+}
+
+.projectWheel .contents li .imgs img {
+    width: 100%;
+    vertical-align: middle;
+    line-height: 300px;
+}
+
+
+.projectWheel .wheelBox  p{
+
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+    position: relative;
+    background: #ECF3F3;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.projectWheel .wheelBox p i{
+    position: absolute;
+    background: url(../img/sum-wheel2.png) no-repeat;
+    width: 13px;
+    height: 5px;
+    top: -5px;
+    left: 193px
+}
+
+.projectWheel li a:hover p i {
+    background-position: 0 -5px;
+}
+
+
+.projectWheel .wheelBox p strong{
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.projectWheel .wheelBox p em{
+    display: block;
+    line-height: 30px;
+    font-size: 16px
+}
+
+.projectWheel .butLeft, .projectWheel .butRight {
+    display: inline-block;
+    background: url(../img/but-wheel.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 3;
+    top: 195px;
+}
+
+.projectWheel .butLeft i , .projectWheel .butRight i {
+    display: inline-block;
+    background: url(../img/but-wheel.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.projectWheel .butLeft {
+    background-position: 0 0;
+    left: -60px;
+}
+
+.projectWheel .butRight {
+    background-position: 0 -80px;
+    right: -60px;
+}
+
+.projectWheel a.butLeft i {
+    background-position: 0 -40px;
+}
+
+.projectWheel a.butRight i {
+    background-position: 0 -120px;
+}
+
+.projectWheel .butLeft:hover i,.projectWheel .butRight:hover i{filter:alpha(opacity=100);opacity: 1;}
+
+   /*精选设计系列*/
+
+.projectBox.px2 {
+    height: 120px;
+}
+
+.projectBox.px2 h3 {
+    margin-top: 0px;
+}
+
+
+.designList{
+    height: 680px;
+}
+.designList li{
+    height: 600px;
+    width: 380px;
+    float: left;
+}
+
+.designList li a div.imgs {
+    width: 380px;
+    height: 494px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.designList li.l1 .imgs:before{
+    background-image: url("../img/design-1.jpg");
+}
+
+.designList li.l2 .imgs:before{
+    background-image: url("../img/design-2.jpg");
+}
+
+.designList li.l2 {
+    margin: 30px 0 0 30px;
+}
+.designList li.l3 .imgs:before{
+    background-image: url("../img/design-3.jpg");
+}
+
+.designList li.l3 {
+    margin-left: 30px;
+}
+
+.designList li .imgs:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 380px;
+    height: 494px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.designList li a {
+    display: block;
+    background: #FFF;
+    height: 600px;
+    width: 380px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.designList li p{
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    color: #585858;
+    font-size: 20px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    font-family: "be";
+}
+
+.designList li a:hover{background: #70C099;}
+
+.designList li a:hover p{color: #FFF;}
+
+.designList li a:hover .imgs:before{
+    transform:scale(1.1)
+}
+/*爱可持续发展*/
+
+#continue .createBox{
+    height: 444px;
+}
+
+.footer_box {
+    margin-top: 0;
+}

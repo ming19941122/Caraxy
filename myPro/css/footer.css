@@ -1,0 +1,327 @@
+
+
+input {
+    font-family: arial,"Microsoft YaHei","微软雅黑",Helvetica,Tahoma,Arial,STXihei,sans-serif;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    color: #585858;
+}
+
+.footer_box .wrapper{
+	height: 570.4px;	
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.footer_box .Dnimg{
+	border-bottom: 1px solid #e5e5e5; 
+}
+
+/*链接*/
+.footer_box .links{
+	border-bottom: 1px solid #e5e5e5; 
+	padding: 25px 0 15px;
+	height: 160px;
+}
+
+/*底部左边logo*/
+.footer_box .logos{
+	float: left;
+	width: 220px;
+}
+
+.footer_box .links .logos a{
+	display: block;
+	margin-left: 65px;
+}
+
+
+.footer_box .logos p{
+	text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 0 40px;
+    width: 180px;
+    line-height: 30px;
+    height: 30px;
+    color: #70C099;
+}
+.links .icon-tel{
+	background: url(../img/icon-tel.png) no-repeat 0 5px;
+	vertical-align: middle;
+	display: inline-block;
+	width: 16px;
+	height: 30px;
+	margin-right: 8px;
+}
+
+.footer_box .links dl{
+	float: left;
+    position: relative;
+    height: 160px;
+    padding-left: 90px;
+    width: 175px
+}
+.footer_box .links dl dt{
+	height: 45px;
+}
+
+.footer_box .links dl dd{
+	margin-top: 5px;
+	height: 23px; 
+}
+
+.footer_box .links dl.getNews{
+	padding-left:80px;
+	width: 100px; 
+}
+
+
+.footer_box .links dl:before {
+    content: "";
+    display: inline-block;
+    left: 0;
+    top: 0;
+    height: 150px;
+    border-left: 1px solid #DEDEDE;
+    position: absolute;
+}
+
+.footer_box .links dl dd a{
+	display: inline-block;
+	line-height: 20px;
+}
+
+/*鼠标悬停*/
+.footer_box .links dl dd a:hover{
+	border-bottom: 1px dashed;
+}
+
+.footer_box .links dl.getNews dd a:hover{
+	border: none;
+}
+
+
+
+.footer_box .links dl dd{
+    margin-top: 5px;
+    height: 23px;
+}
+
+.footer_box .links .getNews dd{
+	height: 30px;
+}
+
+.footer_box .links dl dt h3{
+	font-size: 16px;
+	color: #585858;
+}
+
+.footer_box .links dl dt h6{
+	font-size: 12px;
+    text-transform: uppercase;
+    color: #B7B7B7;
+    margin-top: 5px;
+}
+
+.footer_box .links .getNews dd a{
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.footer_box .links .getNews dd a i {
+	width: 30px;
+	height: 30px;
+	background: url(../img/icon-wei.png) no-repeat;
+	display: inline-block;
+	transition: all  0.2s linear;
+}
+
+.footer_box .links .getNews dd a.weibo {
+	
+	margin-left: 0; 
+}
+
+.footer_box .links .getNews dd a.weixin i{
+
+	background-position: 0 -60px;
+}
+
+
+/*订阅*/
+
+
+.footer_box .Sub{
+
+	margin-top:33px;
+	height: 50px; 
+	padding-bottom: 40px; 
+}
+
+
+ .Sub li{
+	float: left;
+	height: 50px;
+}
+
+.footer_box .Sub .title{
+	width: 250px;
+}
+
+.footer_box .Sub .title h3{
+	font-size: 16px;
+}
+
+.footer_box .Sub .title h6{
+
+	font-size: 14px;
+    text-transform: uppercase;
+    color: #B7B7B7;
+    margin-top: 10px;
+}
+
+.footer_box .Sub .addEmail{
+	width: 666px;
+}
+
+.footer_box .Sub .addEmail strong{
+	font-size: 16px;
+    float: left;
+    line-height: 40px;
+}
+
+
+.footer_box .Sub .addEmail span{
+	display: inline-block;
+    margin-left: 10px;
+	float: left;
+    border-color: #DEDEDE;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    height: 32px;
+    width: 220px;
+    margin-top: 4px;
+    padding: 0 5px;
+
+}
+
+
+
+.footer_box .Sub .addEmail span input{
+	width: 220px;
+	border: none;
+	background:none;
+	height: 30px;
+	color: #585858;
+	outline: none;
+	padding: 1px 0;
+}
+
+
+.footer_box .Sub .addEmail a{
+	float: left;
+	display: inline-block;
+    height: 34px;
+    background: #70C099;
+    line-height: 32px;
+    padding: 0 30px;
+    color: #FFF;
+    margin-top: 4px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+
+.footer_box .Sub .shareBox span{
+	float: left;
+	line-height: 40px;
+}
+
+/*版权*/
+
+.footer_box .copyright{
+	height: 65px;
+	position: relative;
+}
+
+.footer_box .copyright strong{
+	line-height: 65px;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.footer_box .copyright strong a{
+	color: #fff;
+}
+
+.toCctv{
+	position: absolute;
+	display: block;
+	background: url(../img/cctv-right.png) no-repeat;
+	width: 106px;
+	height: 53px;
+	right: 25px;
+	bottom: 8px;
+	z-index: 99;
+
+}
+
+.toOrg{
+	position: absolute;
+	display: block;
+	background: url(../img/org.png) no-repeat;
+	width: 101px;
+	height: 53px;
+	right: 151px;
+	bottom: 8px;
+	z-index: 99;
+}
+
+.toTop{
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 43px;
+	text-align: center;
+	background:url(../img/bj-to-top.png) no-repeat center top;
+	height: 60px;
+	margin: -21px;
+}
+
+.toTop i{
+	display: inline-block;
+	background:url(../img/to-top.png) no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 1px;
+	top: 15px;
+}
+
+
+.footer_box .bj{
+	width: 100%;
+    background: #70C099;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*底部箭头动画*/
+@keyframes toTop{
+    0%{top: 15px;}
+    50%{top:10px;}
+    100%{top: 15px;}
+}
+
+
+a.toTop i:hover{
+	animation: toTop 1s linear infinite;
+}

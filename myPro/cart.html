@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+	<!-- 页头 -->
+	<header id="header"></header>
+	<!-- 主体 -->
+	<div class="main">
+		<div class="wrapper">
+			<div class="position">
+				<strong>我的购物车</strong>
+				<em>Shopping cart</em>
+				<ul>
+					<li>
+						<a href="index_main.html">首页</a>
+					</li>
+					<li class="current">我的购物车</li>
+				</ul>
+			</div>
+			<div class="step s0"></div>
+			<div class="cartBox">
+				<h1>购物清单</h1>
+				<div class="empty hide">
+					购物车是空的哦，先去 <a href="">挑选</a> 吧
+				</div>
+			</div>
+			<dl class="tableList">
+				<dt>
+					<ul>
+						<li class="info">商品名称</li>
+						<li class="amount">数量</li>
+						<li class="price ml50">单价</li>
+					</ul>
+				</dt>
+				<dd class="proList">
+					<ul >
+						<li class="info">
+							<div class="icon">
+								<a href="" target="_blank" class="pro">
+									<img src="./img/fashion/xuanwu.jpg">
+								</a>
+							</div>
+							<div class="info">
+								<h3>旋舞</h3>
+								<p>
+									<span>金属：18K白金</span>
+									<span>尺寸：6</span>
+									<span>主石：0.52克拉</span>
+								</p>
+							</div>
+						</li>
+						<li class="amount">
+							<div class="chooseAmount">
+								<a href="javascript:;" class="add"></a>
+								<input type="text" value="1">
+								<a href="javascript:;" class="minus"></a>
+							</div>
+						</li>
+						<li class="price ml50">￥12,800.00 元</li>
+						<li class="operation">
+							<a href="javascript:void(0)" class="dels">
+								<i></i>
+								<span>删除</span>
+							</a>
+						</li>
+					</ul>
+				</dd>
+				<dd>
+					<ul>
+						<li class="freight"></li>
+						<li class="total">
+							<span class="totalPrices">
+								总计:  ¥<em>12,800.00</em>元
+							</span>
+						</li>
+						<li class="next">
+							<a href="">下一步</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- 页尾 -->
+	<footer id="footer"></footer>
+
+
+</body>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/public.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/footer.js"></script>
+
+</html>
